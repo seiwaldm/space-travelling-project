@@ -1,12 +1,22 @@
 #vorlage {
   position: absolute;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 1;
   width: 100vw;
 }
 
-* {
+/* * {
   border: 1px solid red;
+} */
+
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
 }
 
 /* ------------------ */
@@ -97,4 +107,31 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+.box {
+  background: lightblue;
+  padding: 3rem;
+}
+
+/* colors */
+
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
+}
+.bg-light {
+  background-color: hsl(var(--clr-light));
+}
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+.text-light {
+  color: hsl(var(--clr-light));
+}
+.text-white {
+  color: hsl(var(--clr-white));
 }
