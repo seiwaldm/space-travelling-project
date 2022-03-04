@@ -18,27 +18,29 @@
   </head>
   <body class="bg-dark text-white">
     <!-- <img id="vorlage" src="design-system.png" alt="" /> -->
-    <div class="container">
+    <div class="container flow">
       <h1 class="text-light">Design system</h1>
 
-      <section id="colors">
-        <h2 class="text-white"><span>01</span> colors</h2>
+      <section class="flow" id="colors">
+        <h2 class="numbered-title"><span>01</span> colors</h2>
 
         <div class="grid" style="grid-template-columns: 1fr 1fr 1fr">
-          <div>
+          <div class="flow">
             <div
-              class="text-white"
+              class="text-white ff-serif fs-500"
               style="padding: 3rem 1rem 1rem; border: 1px solid white"
             >
               #0B0D17
             </div>
-            <p><span class="text-light">RGB</span> 11, 13, 23</p>
+            <p class="ff-sans-normal">
+              <span class="text-light">RGB</span> 11, 13, 23
+            </p>
             <p><span class="text-light">HSL</span> 230°, 35%, 7%</p>
           </div>
 
-          <div>
+          <div class="flow">
             <div
-              class="bg-light text-dark"
+              class="bg-light text-dark ff-serif fs-500"
               style="padding: 3rem 1rem 1rem; border: 1px solid white"
             >
               #D0D6F9
@@ -47,9 +49,9 @@
             <p><span class="text-light">HSL</span> 231°, 77%, 90%</p>
           </div>
 
-          <div>
+          <div class="flow">
             <div
-              class="bg-white text-dark"
+              class="bg-white text-dark ff-serif fs-500"
               style="padding: 3rem 1rem 1rem; border: 1px solid white"
             >
               #FFFFFF
@@ -60,10 +62,10 @@
         </div>
       </section>
 
-      <section id="typography" style="margin: 4rem 0">
-        <h2><span>02 </span>Typography</h2>
+      <section class="flow" id="typography" style="margin: 4rem 0">
+        <h2 class="numbered-title"><span>02 </span>Typography</h2>
         <div class="flex">
-          <div style="flex-basis: 100%">
+          <div style="flex-basis: 100%; --flow-space: 4rem" class="flow">
             <div>
               <p class="ff-sans-normal fs-400 text-light">
                 Heading 1 - Bellefair Regular - 150px
@@ -101,7 +103,7 @@
             </div>
           </div>
 
-          <div style="flex-basis: 100%">
+          <div style="flex-basis: 100%; --flow-space: 4rem" class="flow">
             <div>
               <p class="ff-sans-normal fs-400 text-light">
                 Subheading 1 - Bellefair Regular - 28px
@@ -144,6 +146,32 @@
                 dapibus id, mattis vel, nisi.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow" id="interactive-elements">
+        <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
+
+        <!-- navigation -->
+        <div></div>
+
+        <div class="flex">
+          <div>
+            <!-- explore button -->
+            <a
+              class="fs-600 bg-white text-dark uppercase ff-serif large-button flex"
+              href="#"
+              >Explore</a
+            >
+          </div>
+
+          <div>
+            <!-- Tabs -->
+
+            <!-- Dots -->
+
+            <!-- Numbers -->
           </div>
         </div>
       </section>
